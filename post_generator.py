@@ -1,6 +1,6 @@
 from llm_helper import llm
 from fewshots import FewShotPosts
-
+import re
 
 fewshots = FewShotPosts()
 
@@ -40,13 +40,16 @@ def get_prompt(length, language, tag):
         prompt += "4) Use the writing style as per the following examples."
 
     for i, post in enumerate(examples):
-        post_text = post['text']
+        post_text = remove_surrogates(post['text'])
         prompt += f'\n\n Example {i + 1}: \n\n {post_text}'
 
         if i == 1:  # Use max two samples
             break
 
     return prompt
+
+def remove_surrogates(text):
+    return re.sub(r'[\ud800-\udfff]', '', text)
 
 
 if __name__ == "__main__":

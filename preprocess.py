@@ -3,11 +3,11 @@ from llm_helper import llm
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.exceptions import OutputParserException
-import re
+
 
 def clean_text(text):
     # Remove broken surrogate pairs and unsupported Unicode characters
-    return text.encode('utf-8', 'surrogatepass').decode('utf-8', 'ignore')
+    return text.encode('utf-8', 'surrogatepass').decode('utf-8', 'replace')
 
 
 
