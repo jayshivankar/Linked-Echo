@@ -11,13 +11,13 @@
 
 **Linked-Echo** is an AI-powered tool designed for **LinkedIn influencers** who want to generate new posts that **match their personal writing style**.
 
-Let’s say *Mohan* is a LinkedIn influencer. He uploads his past posts to this tool, which:
+Let’s say *Jay* is a LinkedIn influencer. He uploads his past posts to this tool, which:
 
 1. **Analyzes** them to extract:
    - Topics
    - Language
    - Post Length
-2. Uses this metadata to allow custom generation of new posts via a **few-shot prompt strategy**, imitating Mohan’s writing style.
+2. Uses this metadata to allow custom generation of new posts via a **few-shot prompt strategy**, imitating Jay’s writing style.
 
 ---
 
@@ -27,9 +27,9 @@ Let’s say *Mohan* is a LinkedIn influencer. He uploads his past posts to this 
 
 - Upload raw LinkedIn posts in JSON format.
 - NLP pipeline extracts:
-  - **Topics** (via keyword extraction or clustering)
+  - **Topics** (via keyword extraction )
   - **Length** (line or word count buckets)
-  - **Language** (via langdetect or model output)
+  - **Language** (via langdetect )
 
 ### ✅ Stage 2: Post Generation
 
