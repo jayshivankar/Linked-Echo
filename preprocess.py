@@ -53,15 +53,15 @@ def extract_metadata(post):
     {post}
     """
 
-    post = clean_text(post)  # Clean it first ✅
+    post = clean_text(post)  # Clean it first
 
     pt = PromptTemplate.from_template(template)
     chain = pt | llm
 
     try:
-        response = chain.invoke({'post': post})
-        json_parser = JsonOutputParser()
-        return json_parser.parse(response.content)
+        response = chain.invoke({'post': post})       # Executes a llm chain with the input variable post.
+        json_parser = JsonOutputParser()             #  Expects the LLM to return a JSON-formatted string.
+        return json_parser.parse(response.content)     # Parses the raw string to a Python dict.
     except OutputParserException as e:
         print("⚠️ Parsing failed. LLM response:", response.content)
         return None
