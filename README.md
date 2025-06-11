@@ -127,7 +127,8 @@ streamlit run app.py
 
 ## 📸 Demo Screenshot
 
-![linkedin_echo_1](https://github.com/user-attachments/assets/8b4d45f7-ecdc-4f12-8096-6945fbee4ada)
+![linkedin_echo_2](https://github.com/user-attachments/assets/6126d6e6-25d2-4a7d-91f2-8a1584949be7)
+
 
 
 
