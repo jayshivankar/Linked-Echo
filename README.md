@@ -1,4 +1,4 @@
-# 🚀 Linked-Echo
+# 🚀 LinkedIn-Echo
 
 > Generate LinkedIn posts in your **own writing style** using your previous posts as training data.
 
