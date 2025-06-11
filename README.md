@@ -3,7 +3,7 @@
 > Generate LinkedIn posts in your **own writing style** using your previous posts as training data.
 
 **Built with:**  
-🔗 [LangChain](https://www.langchain.com/) • 🦙 LLaMA 3 (via Groq or similar) • 📊 Pandas • 🎯 Streamlit
+🔗 [LangChain](https://www.langchain.com/) • 🦙 LLaMA 3 (via Groq ) • 📊 Pandas • 🎯 Streamlit
 
 ---
 
