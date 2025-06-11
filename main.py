@@ -1,5 +1,7 @@
 import streamlit as st
 from fewshots import FewShotPosts
+from post_generator import generate_post
+
 
 # Options for length and language
 length_options = ["Short", "Medium", "Long"]
@@ -24,7 +26,6 @@ def main():
         selected_language = st.selectbox("Language", options=language_options)
 
 
-   # generate button
    if st.button("Generate"):
        post = generate_post(selected_length,selected_language,selected_tag)
        st.write(post)
